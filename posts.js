@@ -1,4 +1,4 @@
-const posts = [
+/*const posts = [
   {
     id: 1,
     title: "Ciambellone",
@@ -45,3 +45,8 @@ const posts = [
 ];
 
 module.exports = posts;
+
+*/
+
+const express = require('express');
+const router = express.Router();
