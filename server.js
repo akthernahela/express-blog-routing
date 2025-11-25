@@ -12,6 +12,8 @@ app.get('/', (req, res) => {
     res.send(`Server del mio blog`);
 });
 
+app.use('/posts', productsRouter);
+
 /*
 app.get('/posts', (req, res) => {
     res.send(`Lista dei prodotti`);
