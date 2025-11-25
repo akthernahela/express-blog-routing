@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
     res.send(`Server del mio blog`);
 });
 
+/*
 app.get('/posts', (req, res) => {
     res.send(`Lista dei prodotti`);
 });
@@ -30,3 +31,4 @@ app.put('/posts/:id', (req, res) => {
 app.delete('/posts/:id', (req, res) => {
     res.send(`Cancella un prodotto ${req.params.id}`);
 });
+*/
