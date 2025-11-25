@@ -51,22 +51,24 @@ module.exports = posts;
 const express = require('express');
 const router = express.Router();
 
-app.get('/posts', (req, res) => {
+router.get('/', (req, res) => {
   res.send(`Lista dei prodotti`);
 });
 
-app.get('/posts/:id', (req, res) => {
+router.get('/:id', (req, res) => {
   res.send(`Singolo prodotto ${req.params.id}`);
 });
 
-app.post('/posts', (req, res) => {
+router.post('/', (req, res) => {
   res.send('Aggiungi un nuovo prodotto');
 });
 
-app.put('/posts/:id', (req, res) => {
+router.put('/:id', (req, res) => {
   res.send(`Aggiorna il prodotto ${req.params.id}`);
 });
 
-app.delete('/posts/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
   res.send(`Cancella un prodotto ${req.params.id}`);
 });
+
+module.exports = router;
