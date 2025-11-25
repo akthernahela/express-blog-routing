@@ -22,3 +22,7 @@ app.get('/posts/:id', (req, res) => {
 app.post('/posts', (req, res) => {
     res.send('Aggiungi un nuovo prodotto');
 });
+
+app.put('/posts/:id', (req, res) => {
+    res.send(`Aggiorna il prodotto ${req.params.id}`);
+});
