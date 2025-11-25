@@ -26,3 +26,7 @@ app.post('/posts', (req, res) => {
 app.put('/posts/:id', (req, res) => {
     res.send(`Aggiorna il prodotto ${req.params.id}`);
 });
+
+app.delete('/posts/:id', (req, res) => {
+    res.send(`Cancella un prodotto ${req.params.id}`);
+});
