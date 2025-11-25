@@ -14,3 +14,7 @@ app.get('/', (req, res) => {
 app.get('/posts', (req, res) => {
     res.send(`Lista dei prodotti`);
 });
+
+app.get('/posts/:id', (req, res) => {
+    res.send(`Singolo prodotto ${req.params.id}`);
+});
